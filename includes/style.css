@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, div, footer, main {
+    display: block;
+}
+
+body{
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+form {
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+}
+
+.form__input-field {
+    height: 3.3rem;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 2.5rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+}
+  
+.form__input-field i {
+    text-align: center;
+    line-height: 3.437rem;
+    color: #acacac;
+    font-size: 1.1rem;
+}
+  
+.form__input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgb(39, 39, 39);
+}
+  
+.form__input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.form__input-field:hover {
+    background-color: rgba(122, 120, 120, 0.459);
+    transition: 0.5s;
+}
+
+.form__input-field:hover input::placeholder {
+    color: rgb(131, 129, 129);
+}
+  
+.form__submit {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    height: 3.3rem;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    background-color: #0cbb40;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+  
+.form__submit:hover {
+    background-color: #0d9636;
+    transition: 0.5s;
+}
+
+.form__title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+
+
+li {
+    list-style-type: none;
+    margin: 20px;
+    font-size: 15px;
+}
+
+li span {
+    margin-right: 20px;
+    border-bottom: 2px solid rgb(7, 151, 55);
+}
+
+.prop {
+    text-decoration: 2px underline solid rgb(7, 151, 55);;
+}
+
+td{
+    padding:15px 20px 0 15px;
+}
+
+table, th, td {
+    text-align: left;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.logout {
+    width: 100px;
+    margin-top: 20px;
+    align-items: center;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    background-color: #0cbb40;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: inherit;
+    margin-right: 75px;
+}
+      
+.logout:hover {
+    background-color: #0d9636;
+    transition: 0.5s;
+}
+
+/*desktop*/
+@media only screen and (min-width:770px){
+    .bg {
+        animation:slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+        bottom:0;
+        left:-50%;
+        opacity:.5;
+        position:fixed;
+        right:-50%;
+        top:0;
+        z-index:-1;
+      }
+      
+      .bg2 {
+        animation-direction:alternate-reverse;
+        animation-duration:4s;
+      }
+      
+      .bg3 {
+        animation-duration:5s;
+      }
+      
+      h1 {
+        font-family:monospace;
+      }
+      
+      @keyframes slide {
+        0% {
+          transform:translateX(-25%);
+        }
+        100% {
+          transform:translateX(25%);
+        }
+      }
+    
+}
+
+/*mobile*/
+@media only screen and (max-width:769px){
+    .bg {
+        animation:slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, rgb(158, 37, 214) 50%, rgb(230, 109, 129) 50%);
+        bottom:0;
+        left:-50%;
+        opacity:.5;
+        position:fixed;
+        right:-50%;
+        top:0;
+        z-index:-1;
+      }
+      
+      .bg2 {
+        animation-direction:alternate-reverse;
+        animation-duration:4s;
+      }
+      
+      .bg3 {
+        animation-duration:5s;
+      }
+      
+      h1 {
+        font-family:monospace;
+      }
+      
+      @keyframes slide {
+        0% {
+          transform:translateX(-25%);
+        }
+        100% {
+          transform:translateX(25%);
+        }
+      }
+}
